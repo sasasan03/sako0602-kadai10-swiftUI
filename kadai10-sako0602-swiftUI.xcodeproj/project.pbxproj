@@ -11,9 +11,8 @@
 		69397C5D29595B2900EC3D87 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69397C5C29595B2900EC3D87 /* ContentView.swift */; };
 		69397C5F29595B3000EC3D87 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 69397C5E29595B3000EC3D87 /* Assets.xcassets */; };
 		69397C6229595B3000EC3D87 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 69397C6129595B3000EC3D87 /* Preview Assets.xcassets */; };
-		69397C6C29595B3100EC3D87 /* kadai10_sako0602_swiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69397C6B29595B3100EC3D87 /* kadai10_sako0602_swiftUITests.swift */; };
-		69397C7629595B3100EC3D87 /* kadai10_sako0602_swiftUIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69397C7529595B3100EC3D87 /* kadai10_sako0602_swiftUIUITests.swift */; };
-		69397C7829595B3100EC3D87 /* kadai10_sako0602_swiftUIUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69397C7729595B3100EC3D87 /* kadai10_sako0602_swiftUIUITestsLaunchTests.swift */; };
+		69397C8529595CC400EC3D87 /* JapanesePrefecture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69397C8429595CC400EC3D87 /* JapanesePrefecture.swift */; };
+		69397C87295999F200EC3D87 /* ExperimentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69397C86295999F100EC3D87 /* ExperimentView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,10 +39,9 @@
 		69397C5E29595B3000EC3D87 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		69397C6129595B3000EC3D87 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		69397C6729595B3100EC3D87 /* kadai10-sako0602-swiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "kadai10-sako0602-swiftUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		69397C6B29595B3100EC3D87 /* kadai10_sako0602_swiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = kadai10_sako0602_swiftUITests.swift; sourceTree = "<group>"; };
 		69397C7129595B3100EC3D87 /* kadai10-sako0602-swiftUIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "kadai10-sako0602-swiftUIUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		69397C7529595B3100EC3D87 /* kadai10_sako0602_swiftUIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = kadai10_sako0602_swiftUIUITests.swift; sourceTree = "<group>"; };
-		69397C7729595B3100EC3D87 /* kadai10_sako0602_swiftUIUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = kadai10_sako0602_swiftUIUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		69397C8429595CC400EC3D87 /* JapanesePrefecture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JapanesePrefecture.swift; sourceTree = "<group>"; };
+		69397C86295999F100EC3D87 /* ExperimentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExperimentView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,8 +73,6 @@
 			isa = PBXGroup;
 			children = (
 				69397C5929595B2900EC3D87 /* kadai10-sako0602-swiftUI */,
-				69397C6A29595B3100EC3D87 /* kadai10-sako0602-swiftUITests */,
-				69397C7429595B3100EC3D87 /* kadai10-sako0602-swiftUIUITests */,
 				69397C5829595B2900EC3D87 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -96,6 +92,8 @@
 			children = (
 				69397C5A29595B2900EC3D87 /* kadai10_sako0602_swiftUIApp.swift */,
 				69397C5C29595B2900EC3D87 /* ContentView.swift */,
+				69397C8429595CC400EC3D87 /* JapanesePrefecture.swift */,
+				69397C86295999F100EC3D87 /* ExperimentView.swift */,
 				69397C5E29595B3000EC3D87 /* Assets.xcassets */,
 				69397C6029595B3000EC3D87 /* Preview Content */,
 			);
@@ -108,23 +106,6 @@
 				69397C6129595B3000EC3D87 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
-			sourceTree = "<group>";
-		};
-		69397C6A29595B3100EC3D87 /* kadai10-sako0602-swiftUITests */ = {
-			isa = PBXGroup;
-			children = (
-				69397C6B29595B3100EC3D87 /* kadai10_sako0602_swiftUITests.swift */,
-			);
-			path = "kadai10-sako0602-swiftUITests";
-			sourceTree = "<group>";
-		};
-		69397C7429595B3100EC3D87 /* kadai10-sako0602-swiftUIUITests */ = {
-			isa = PBXGroup;
-			children = (
-				69397C7529595B3100EC3D87 /* kadai10_sako0602_swiftUIUITests.swift */,
-				69397C7729595B3100EC3D87 /* kadai10_sako0602_swiftUIUITestsLaunchTests.swift */,
-			);
-			path = "kadai10-sako0602-swiftUIUITests";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,6 +240,8 @@
 			files = (
 				69397C5D29595B2900EC3D87 /* ContentView.swift in Sources */,
 				69397C5B29595B2900EC3D87 /* kadai10_sako0602_swiftUIApp.swift in Sources */,
+				69397C8529595CC400EC3D87 /* JapanesePrefecture.swift in Sources */,
+				69397C87295999F200EC3D87 /* ExperimentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,7 +249,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				69397C6C29595B3100EC3D87 /* kadai10_sako0602_swiftUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,8 +256,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				69397C7829595B3100EC3D87 /* kadai10_sako0602_swiftUIUITestsLaunchTests.swift in Sources */,
-				69397C7629595B3100EC3D87 /* kadai10_sako0602_swiftUIUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

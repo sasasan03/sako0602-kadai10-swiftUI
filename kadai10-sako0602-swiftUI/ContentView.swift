@@ -9,13 +9,30 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        NavigationStack{
+            List {
+                ForEach(JapanesePrefectures.allCases){ prefecture in
+                    HStack{
+                        Text(prefecture.name)
+                        Spacer()
+                        Text("\(prefecture.rawValue + 1)番目の都道府県です")
+                            .opacity(0.5)
+                    }
+                    .listRowBackground(rawColor(index: prefecture.rawValue))
+                }
+            }
+            .navigationTitle("47都道府県とその番号")
+            .navigationBarTitleDisplayMode(.inline)
         }
-        .padding()
+    }
+    func rawColor(index: Int) -> Color {
+        if index % 3 == 0 {
+            return Color.red
+        } else if index % 3 == 1 {
+            return Color.green
+        } else {
+            return Color.blue
+        }
     }
 }
 
