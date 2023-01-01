@@ -11,9 +11,9 @@ struct ContentView: View {
     var body: some View {
         NavigationStack{
             List {
-                ForEach(0..<Prefecture.prefectures.count, id: \.self) { index in
+                ForEach(0..<Prefecture.all.count, id: \.self) { index in
                     HStack{
-                        Text(Prefecture.prefectures[index])
+                        Text(Prefecture.all[index])
                         Spacer()
                         Text("\(index + 1)番目の都道府県です")
                             .opacity(0.5)

@@ -8,7 +8,7 @@
 import Foundation
 
 struct Prefecture {
-    static let prefectures = [
+    static let all = [
         "北海道",
         "青森",
         "岩手",
