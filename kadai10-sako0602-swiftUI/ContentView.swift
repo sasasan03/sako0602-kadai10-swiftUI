@@ -11,15 +11,24 @@ struct ContentView: View {
     var body: some View {
         NavigationStack{
             List {
-                ForEach(JapanesePrefectures.allCases){ prefecture in
+                ForEach(0..<Prefecture.all.count, id: \.self){ index in
                     HStack{
-                        Text(prefecture.name)
+                        Text(Prefecture.all[index])
                         Spacer()
-                        Text("\(prefecture.rawValue + 1)番目の都道府県です")
+                        Text("\(index + 1)番目の露道府県です")
                             .opacity(0.5)
                     }
-                    .listRowBackground(rawColor(index: prefecture.rawValue))
+                    .listRowBackground(rawColor(index: index))
                 }
+//                ForEach(JapanesePrefectures.allCases){ prefecture in
+//                    HStack{
+//                        Text(prefecture.name)
+//                        Spacer()
+//                        Text("\(prefecture.rawValue + 1)番目の都道府県です")
+//                            .opacity(0.5)
+//                    }
+//                    .listRowBackground(rawColor(index: prefecture.rawValue))
+//                }
             }
             .navigationTitle("47都道府県とその番号")
             .navigationBarTitleDisplayMode(.inline)
